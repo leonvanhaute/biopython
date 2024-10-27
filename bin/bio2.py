@@ -50,7 +50,7 @@ def maximum_from_tab_separated_matrix_with_labels_file(inputfile):
 	return max_score,list(set(maximum_list))	
 
 
-print 'Task 4:\n'
+print ('Task 4:\n')
 input_file = 'input1.fasta'
 my_array = []
 my_header = ['    ']
@@ -68,18 +68,18 @@ for sequence in SeqIO.parse(open(input_file), "fasta"):
 	
 for row in my_array:
     for val in row:
-        print '{:7}'.format(val),
-    print      
-print '\n*******************************\n'	
+        print ('{:7}'.format(val),)
+    print ()
+print ('\n*******************************\n')
 
 for input_file in ('data2.txt','data.txt','input1.txt','input2.txt'):
-	print 'Task 5 met {0}'.format(input_file)
+	print ('Task 5 met {0}'.format(input_file))
 	max_score,max_list = maximum_from_tab_separated_matrix_with_labels_file(input_file)
-	print 'Highest overlapscore={0}'.format(max_score)
+	print ('Highest overlapscore={0}'.format(max_score))
 	for m in max_list:
 		maxseq = m.split('|')
-		print 'sequence "{0}" and sequence "{1}"'.format(maxseq[0],maxseq[1])
-	print 'have the highest overlap score in the file\n'
-	print '\n*******************************\n'	
+		print ('sequence "{0}" and sequence "{1}"'.format(maxseq[0],maxseq[1]))
+	print ('have the highest overlap score in the file\n')
+	print ('\n*******************************\n'	)
 
 
