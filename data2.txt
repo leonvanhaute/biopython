@@ -1,0 +1,3 @@
+kolom1	seq_id1	seq_id2
+seq_id1	16	12
+seq_id2	12	16
